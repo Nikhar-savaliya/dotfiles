@@ -1,0 +1,151 @@
+{
+  "window.zoomLevel": 1,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.renderWhitespace": "none",
+  // "workbench.statusBar.visible": false,
+  "editor.fontFamily": "OperatorMonoSSmLig Nerd Font,JetBrains Mono,FiraCode Nerd Font",
+  "editor.lineHeight": 1.4,
+  "editor.fontSize": 17,
+  "editor.mouseWheelZoom": true,
+  // "workbench.activityBar.location": "hidden",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.hideCursorInOverviewRuler": true,
+  // "workbench.editor.tabActionCloseVisibility": false,
+  "explorer.decorations.colors": false,
+  "explorer.compactFolders": false,
+  "git.decorations.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.showFoldingControls": "never",
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.editor.showTabs": "none",
+  "editor.occurrencesHighlight": "off",
+  // "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "scm.diffDecorationsGutterPattern": {
+    "added": false,
+    "modified": false
+  },
+  "scm.diffDecorations": "none",
+  "scm.diffDecorationsGutterAction": "none",
+  "files.autoSave": "onWindowChange",
+  "window.menuBarVisibility": "toggle",
+
+  // VIM
+  // "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // save
+    // naviagtion : switch between buffers (never going to use but still...)
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // Splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // Panes
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // Nice to have
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    { "before": ["leader", "f"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+
+    // toggle terminal
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Nord Deep",
+  "editor.stickyScroll.enabled": false,
+  "workbench.productIconTheme": "Tabler",
+  "explorer.confirmPasteNative": false,
+  "git.confirmSync": false,
+  "workbench.accounts.experimental.showEntitlements": true,
+  "git.enableSmartCommit": true,
+  "window.titleBarStyle": "custom",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "symbols"
+}
