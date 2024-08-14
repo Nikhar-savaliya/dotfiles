@@ -1,0 +1,73 @@
+#!/bin/bash
+
+BLOG="$HOME/github/blogv2/"
+
+if [[ ! -d "$BLOG" ]]; then
+  echo "Blog directory doesn't exist! : $BLOG"
+  exit 1
+fi
+
+createBlog() {
+  cd "$BLOG" || exit
+  echo "Enter The Post Name:"
+  read -r post_name
+
+  # Convert spaces to hyphens and make the filename lowercase
+  post_slug=$(echo "$post_name" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+  # Format the date in the desired format
+  # post_date=$(date +"%Y-%m-%dT%H:%M:%S%z")
+
+  hugo new content ./content/posts/"$post_slug".md
+
+  # Open the file in Neovim
+  codium "$BLOG/content/posts/$post_slug.md"
+}
+
+previewnewblog() {
+  cd "$BLOG" || {
+    echo "Error: Failed to change directory to '$BLOG'"
+    exit 1
+  }
+  hugo server -D
+}
+
+buildBlog(){
+  cd "$BLOG" || {
+    echo "Error: Failed to change directory to '$BLOG'"
+    exit 1
+  }
+  rm -rf public/
+  hugo
+}
+
+publishnewblog() {
+  cd "$BLOG" || {
+    echo "Error: Failed to change directory to $BLOG"
+    exit 1
+  }
+  echo "Enter a Commit message:"
+  read -r commit_msg
+  git add .
+  git commit -m "$commit_msg"
+  git push 
+}
+
+case $1 in
+create)
+  createBlog
+  ;;
+preview)
+  previewnewblog
+  ;;
+build)
+  buildBlog
+  ;;
+publish)
+  publishnewblog
+  ;;
+*)
+  echo "Requires One of These argument: [ create | preview | build | publish ]"
+  exit 1
+  ;;
+esac
