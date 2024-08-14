@@ -1,0 +1,20 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 16.0
+[font.normal]
+# family = "FiraCode Nerd Font"
+family = "OperatorMonoSSmLig Nerd Font"
+
+[window]
+decorations = "none"
+startup_mode = "FULLSCREEN"
+
+[window.padding]
+x=12
+y=12
+
+# Copyright (c) 2016-present Sven Greb <development@svengreb.de>
+# This source code is licensed under the MIT license found in the license file.
+
