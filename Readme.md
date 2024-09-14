@@ -2,9 +2,9 @@
 
 🎴 _Just to know,_
 
-- I am using Ubuntu 22.04
-- Switch between neovim and VSCodium :) don't ask me why;
-- Config files for Obsidian, Alacritty, tmux, neovim
+- I am using windows with WSL
+- For code, I use VSCode with vim keybindings
+- Config files for Obsidian, Alacritty, tmux, neovim, VSCode, etc.
 
 # How to setup neovim with my Nvim config
 
