@@ -16,11 +16,11 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
-  {
-    "key": "space b",
-    "command": "workbench.action.showAllEditors",
-    "when": "vim.mode == 'Normal' &&  (editorTextFocus || !inputFocus)"
-  },
+  // {
+  //   "key": "space b",
+  //   "command": "workbench.action.showAllEditors",
+  //   "when": "vim.mode == 'Normal' &&  (editorTextFocus || !inputFocus)"
+  // },
   {
     "key": "space e",
     "command": "workbench.action.toggleSidebarVisibility",
@@ -41,7 +41,6 @@
     "command": "workbench.action.previousEditorInGroup",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   // Coding
   {
     "key": "shift-j",
@@ -98,6 +97,11 @@
     "command": "editor.action.revealDefinition",
     "when": "vim.mode == 'Normal' && editorTextFocus"
   },
+  {
+    "key": "ctrl+m", // Replace with your preferred shortcut
+    "command": "editor.toggleFold",
+    "when": "editorTextFocus"
+  },
   // {
   //   "key": "space g d",
   //   "command": "editor.action.revealDefinition",
@@ -123,7 +127,6 @@
     "command": "editor.action.addSelectionToNextFindMatch",
     "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus || !inputFocus)"
   },
-
   // explorer
   {
     "key": "r",

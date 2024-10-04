@@ -1,0 +1,62 @@
+{
+  // Editor settings
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderWhitespace": "none",
+  "editor.fontFamily": "JetBrains Mono, Hack Nerd Font",
+  "editor.lineHeight": 1.5,
+  "editor.fontSize": 16,
+  "editor.mouseWheelZoom": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.occurrencesHighlight": "off",
+  "editor.stickyScroll.enabled": false,
+  "editor.scrollbar.verticalScrollbarSize": 8,
+
+  // Explorer settings
+  "explorer.compactFolders": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.decorations.badges": false,
+
+  // Window settings
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "auto",
+  "window.commandCenter": false,
+  "window.titleBarStyle": "custom",
+
+  // Workbench settings
+  "workbench.layoutControl.enabled": false,
+  "workbench.productIconTheme": "Tabler",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Catppuccin Mocha",
+
+  // Git settings
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // catppuccin settings
+  "catppuccin.accentColor": "lavender",
+
+  // VIM SETTINGS
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
+}
