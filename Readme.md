@@ -1,14 +1,11 @@
-# 💠 DotFiles
-
-🎴 _Just to know,_
+# DotFiles
 
 - I am using windows with WSL
-- For code, I use VSCode with vim keybindings
-- Config files for Obsidian, Alacritty, tmux, neovim, VSCode, etc.
+- For code I use Neovim with WSL.
 
 ## My VScode Vim
 
-make sure you have these extensions installed
+if you are copying entire settings.json; make sure you have these extensions installed.
 
 1. Vim
 2. Tabler Product Icons
@@ -59,11 +56,11 @@ I disabled ctrl keys for vim; so i can use vscode keybinding for ctrl
 
 ## How to setup neovim with my Nvim config
 
-### ⚡️ Requirements
+### Requirements
 
 - Neovim >= **0.9.0** (needs to be built with **LuaJIT**)
 - Git >= **2.19.0** (for partial clones support)
-- a [Nerd Font](https://www.nerdfonts.com/) **_(optional)_**
+- a [Nerd Font](https://www.nerdfonts.com/)
 - a **C** compiler for `nvim-treesitter`. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
 
 ### FOLLOW THIS STEPS
@@ -80,4 +77,7 @@ mv ~/.config/nvim{,.bak}
 
 # copy my nvim config files
 cp ./nvim -r ~/.config/nvim
+
+# run neovim
+nvim
 ```
